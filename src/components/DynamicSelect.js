@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 
 class DynamicSelect extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     handleChange = (e) => {
         let selectedValue = e.target.value;
-        this.props.onselectChange(selectedValue);
+        this.props.onSelectChange(selectedValue);
     }
 
     render() {
